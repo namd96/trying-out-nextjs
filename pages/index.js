@@ -62,8 +62,8 @@ class MovieListing extends React.Component {
             <div>
                 {
 
-                    this.state.moviesList.results.map((movie) => {
-                        return <MovieComponent movieInformation={movie} />
+                    this.state.moviesList.results.map((movie,idx) => {
+                        return <MovieComponent key={idx} movieInformation={movie} />
                     })
                 }
             </div>
